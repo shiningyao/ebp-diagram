@@ -1,1 +1,1 @@
-# ebp-diagram
+# A flexible diagram generator for ebp platform.
