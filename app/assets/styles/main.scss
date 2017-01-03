@@ -1,0 +1,19 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "base/variables";
+
+body {
+  background: url("#{$imagePath}/desktop.png") no-repeat;
+  margin: 0 auto;
+  width: 1366px;
+  height: 768px;
+}
+
+.main-container {
+  width: 1071px;
+  height: 540px;
+  position: absolute;
+  left: 295px;
+  top: 186px;
+  overflow: hidden;
+}

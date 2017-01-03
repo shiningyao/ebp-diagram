@@ -1,0 +1,93 @@
+@import "base/variables";
+.ebp-diagram-container {
+  height: 100%;
+  & > .diagram-nav-menus {
+    float: right;
+    width: 265px;
+    height: 100%;
+    background: #FAFAFA;
+    border-left: 1px solid #E1E8ED;
+    .nav-menus-title {
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAjCAYAAABVcWC0AAAABGdBTUEAALGPC/xhBQAAAEVJREFUCB1tjUkOACAIAwv/f696qwUVY+IBkma6oPVBBwknANfplbSQDJlgW1Ja+Q5d2VXwxHZWvn+fzBdoLNaq1GpIZAI6yygLfaI6DAAAAABJRU5ErkJggg==) repeat-x;
+      height: 35px;
+      line-height: 34px;
+      font-size: 14px;
+      text-align: center;
+      color: #666666;
+      border-right: 1px solid #e7e7e7;
+    }
+  }
+
+  ul.nav-menus {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & > li {
+      float: left;
+      margin-top: -1px;
+      & > a {
+        text-align: center;
+        font-size: 12px;
+        width: 88px;
+        height: 88px;
+        float: left;
+        border: 1px solid #e7e7e7;
+        border-left: 0;
+        overflow: hidden;
+        padding: 10px 12px 0;
+        &, &:hover, &:active, &:focus, &:visited {
+          color: #666666;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav-text {
+      display: inline-block;
+      height: 35px;
+      line-height: 1.42857143;
+      vertical-align: middle;
+    }
+
+    .nav-icon {
+      display: inline-block;
+      & > img {
+        height: 30px;
+      }
+      margin-bottom: 8px;
+    }
+  }
+
+  .diagram-content {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .diagram-grid {
+    height: 100%;
+    overflow: hidden;
+    .diagram-col {
+      float: left;
+      width: (100% / 7);
+      height: 100%;
+    }
+
+    .diagram-cell {
+      height: (100% / 11);
+      border-right: 1px solid #666666;
+      border-bottom: 1px solid #666666;
+      text-align: center;
+      padding: 0 15px;
+      position: relative;
+      & > img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 5px;
+      }
+    }
+
+    .diagram-item-title {
+      font-size: 16px;
+    }
+  }
+}
